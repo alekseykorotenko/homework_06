@@ -28,24 +28,32 @@
             </div>
         </nav>
 
-        <header class="header">
-            
-        </header>
-
-        <main class="main">
-            <h1 class="header__heading">Авторизація</h1>
-            <div class="main__heading--spec">
+        <header class="header header--spec">
+            <div class="header__heading--spec">
                 <form action="https://fom.in.ua/echo" method="POST">
-                    <label for="login">Логін: </label>
-                    <input type="text" id="login" placeholder="Вкажіть логін" required>
+                    <h1 class="header__heading auth">Авторизація</h1>
+                    <div class="header__authorization">
+                        <label for="login">Логін: </label>
+                        <input class="authorization__input" type="text" id="login" placeholder="Вкажіть логін" required>
+                    </div>
+
+                    <div class="header__authorization">
+                        <label for="password">Пароль: </label>
+                        <input class="authorization__input" type="password" id="password" placeholder="Вкажіть пароль" required>
+                    </div>
     
-                    <label for="password">Пароль: </label>
-                    <input type="password" id="password" placeholder="Вкажіть пароль" required>
-    
-                    <input type="submit" name="Submit">
+                    <div class="car__search car__search--spec">
+                        <button type="submit">
+                            <span class="car__submit">Увійти</span>
+                        </button>
+                    </div>
                 </form>
             </div>
-        </main>
+        </header>
+
+        <!-- <main class="main">
+            
+        </main> -->
     </div>
 </body>
 </html>
