@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автомагазин - Авторизація</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav__wrap">
+                <ul>
+                    <li>
+                        <a href="../index.html">Головна</a>
+                    </li>
+                    <li>
+                        <a href="../pages/search.html">Розширений пошук</a>
+                    </li>
+                    <li>
+                        <a href="../pages/auth.html">Авторизація</a>
+                    </li>
+                    <li>
+                        <a href="../pages/registration.html">Реєстрація</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <header class="header">
+            
+        </header>
+
+        <main class="main">
+            <h1 class="header__heading">Авторизація</h1>
+            <div class="main__heading--spec">
+                <form action="https://fom.in.ua/echo" method="POST">
+                    <label for="login">Логін: </label>
+                    <input type="text" id="login" placeholder="Вкажіть логін" required>
+    
+                    <label for="password">Пароль: </label>
+                    <input type="password" id="password" placeholder="Вкажіть пароль" required>
+    
+                    <input type="submit" name="Submit">
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

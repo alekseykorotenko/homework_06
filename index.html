@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автомагазин - Головна</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav__wrap">
+                <ul>
+                    <li>
+                        <a href="./index.html">
+                            <span class="nav__wrap--mod">Головна</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/search.html">
+                            <span class="nav__wrap--mod">Розширений пошук</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/auth.html">
+                            <span class="nav__wrap--mod">Авторизація</span>    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/registration.html">
+                            <span class="nav__wrap--mod">Реєстрація</span> 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <header class="header">
+            <div class="header__heading--spec">
+                <form action="https://fom.in.ua/echo" method="GET">
+                    <div class="header__heading car_body">
+                        <!-- <label for="car_body">Тип кузову: </label> -->
+                        <label class="checkbox">
+                            <input type="checkbox" name="sedan" id="sedan">
+                            <span>Седан</span> 
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="crossover" id="crossover">
+                            <span>Кросовер</span>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="wagon" id="wagon">
+                            <span>Універсал</span>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="coupe" id="coupe">
+                            <span>Купе</span>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="hatchback" id="hatchback">
+                            <span>Хетчбек</span>
+                        </label>
+                    </div>
+    
+                    <div class="car__select">
+                        <!-- <label for="car_brand">Марка авто:</label> -->
+                        <select name="car_brand" id="car_brand">
+                            <option value="all" selected>Марка авто</option>
+                            <option value="Volkswagen">Volkswagen</option>
+                            <option value="Ford">Ford</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Mersedes">Mersedes</option>
+                            <option value="Kia">Kia</option>
+                            <option value="Mazda">Mazda </option>
+                        </select>
+                    </div>
+    
+                    <!-- <br> -->
+    
+                    <div class="car__select">
+                        <!-- <label for="car_city">Країна виробник:</label> -->
+                        <select name="car_city" id="car_city">
+                            <option value="all">Країна виробник</option>
+                            <option value="USA">USA</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Korea">Korea</option>
+                        </select>
+                    </div>
+    
+                    <br>
+    
+                    <div class="car__input">
+                        <!-- <label for="car_cost">Ціна (від і до)</label> -->
+                        <input type="text" name="min_cost" placeholder="Ціна від">
+                    </div>
+                    <div class="car__input">
+                    <input type="text" name="max_cost" placeholder="Ціна до">
+                    </div>
+                    <div class="car__select currency">
+                        <select name="currency" id="currency">
+                            <option value="all" selected>Валюта</option>
+                            <option value="USD">USD $</option>
+                            <option value="EUR">EUR €</option>
+                            <option value="UAH">UAH ₴</option>
+                        </select>
+                    </div>
+    
+                    <br>
+    
+                    <div class="car__select">
+                        <!-- <label for="car_release">Рік випуску (від і до)</label> -->
+                        <select name="car_release_min" id="car_release_min">
+                            <option value="2004" selected>Рік випуску від</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                            <option value="2009">2009</option>
+                            <option value="2008">2008</option>
+                            <option value="2007">2007</option>
+                            <option value="2006">2006</option>
+                            <option value="2005">2005</option>
+                            <option value="2004">2004</option>
+                        </select>
+                    </div>
+                    
+                    <div class="car__select">
+                        <select name="car_release_max" id="car_release_max">
+                            <option value="2023" selected>Рік випуску до</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                            <option value="2009">2009</option>
+                            <option value="2008">2008</option>
+                            <option value="2007">2007</option>
+                            <option value="2006">2006</option>
+                            <option value="2005">2005</option>
+                            <option value="2004">2004</option>
+                        </select>
+                    </div>
+    
+                    <!-- <br> -->
+    
+                    <div class="car__select">
+                        <!-- <label for="car_color">Колір:</label> -->
+                        <select name="car_color" id="car_color">
+                            <option value="all" selected>Колір</option>
+                            <option value="white">Білий</option>
+                            <option value="red">Червоний</option>
+                            <option value="black">Чорний</option>
+                            <option value="silver">Срібний</option>
+                            <option value="yellow">Жовтий</option>
+                            <option value="green">Зелений</option>
+                            <option value="brown">Коричневий</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="car__search">
+                        <a href="./pages/search.html">Розширений доступ</a>
+                    </div>
+                    <div class="car__search car__search--spec">
+                        <button type="submit">
+                            <span class="car__submit">Пошук</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div >
+                <img class="header__img" src="./imgs/car.png" alt="car">
+            </div>
+        </header>
+        <main class="main">
+    
+        </main>
+    </div>
+</body>
+</html>

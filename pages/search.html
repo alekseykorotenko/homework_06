@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автомагазин - Пошук авто</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav__wrap">
+                <ul>
+                    <li>
+                        <a href="../index.html">Головна</a>
+                    </li>
+                    <li>
+                        <a href="../pages/search.html">Розширений пошук</a>
+                    </li>
+                    <li>
+                        <a href="../pages/auth.html">Авторизація</a>
+                    </li>
+                    <li>
+                        <a href="../pages/registration.html">Реєстрація</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <header class="header">
+            <div class="header__heading">
+                <form action="https://fom.in.ua/echo" method="GET">
+                    <label for="car_body">Тип кузову: </label>
+                    <div class="header__heading car_body">
+                        <input type="checkbox" name="sedan" id="sedan">
+                        <label for="sedan">Седан</label>
+                    </div>
+                    <div class="header__heading car_body">
+                        <input type="checkbox" name="crossover" id="crossover">
+                        <label for="crossover">Кросовер</label>
+                    </div>
+                    <div class="header__heading car_body">
+                        <input type="checkbox" name="wagon" id="wagon">
+                        <label for="wagon">Універсал</label>
+                    </div>
+                    <div class="header__heading car_body">
+                        <input type="checkbox" name="coupe" id="coupe">
+                        <label for="coupe">Купе</label>
+                    </div>
+                    <div class="header__heading car_body">
+                        <input type="checkbox" name="hatchback" id="hatchback">
+                        <label for="hatchback">Хетчбек</label>
+                    </div>
+
+                    <label for="car_brand">Марка авто:</label>
+                    <select name="car_brand" id="car_brand">
+                        <option value="Volkswagen">Volkswagen</option>
+                        <option value="Ford">Ford</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Mersedes">Mersedes</option>
+                        <option value="Kia">Kia</option>
+                        <option value="Mazda">Mazda </option>
+                    </select>
+
+                    <br>
+
+                    <label for="car_city">Країна виробник:</label>
+                    <select name="car_city" id="car_city">
+                        <option value="USA">USA</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Korea">Korea</option>
+                    </select>
+
+                    <br>
+
+                    <label for="car_cost">Ціна (від і до)</label>
+                    <input type="text" name="min_cost">
+                    <input type="text" name="max_cost">
+                    <select name="currency" id="currency">
+                        <option value="USD">$</option>
+                        <option value="EUR">€</option>
+                        <option value="UAH">₴</option>
+                    </select>
+
+                    <br>
+
+                    <label for="car_release">Рік випуску (від і до)</label>
+                    <select name="car_release_min" id="car_release_min">
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                        <option value="2009">2009</option>
+                        <option value="2008">2008</option>
+                        <option value="2007">2007</option>
+                        <option value="2006">2006</option>
+                        <option value="2005">2005</option>
+                        <option value="2004">2004</option>
+                    </select>
+                    <select name="car_release_max" id="car_release_max">
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                        <option value="2009">2009</option>
+                        <option value="2008">2008</option>
+                        <option value="2007">2007</option>
+                        <option value="2006">2006</option>
+                        <option value="2005">2005</option>
+                        <option value="2004">2004</option>
+                    </select>
+
+                    <br>
+
+                    <label for="car_condition">Стан:</label>
+                    <div class="header__heading car_condition">
+                        <input type="checkbox" name="new" id="new">
+                        <label for="new">Нова</label>
+                    </div>
+                    <div class="header__heading car_condition">
+                        <input type="checkbox" name="crashed" id="crashed">
+                        <label for="crashed">Бита</label>
+                    </div>
+                    <div class="header__heading car_condition">
+                        <input type="checkbox" name="credit" id="credit">
+                        <label for="credit">У кредиті</label>
+                    </div>
+                    <div class="header__heading car_condition">
+                        <input type="checkbox" name="not_cleared" id="not_cleared">
+                        <label for="not_cleared">Нерозмитнена</label>
+                    </div>
+                    <div class="header__heading car_condition">
+                        <input type="checkbox" name="first_registration" id="first_registration">
+                        <label for="first_registration">Перша реєстрація</label>
+                    </div>
+
+                    <br>
+
+                    <label for="car_fuel">Тип палива:</label>
+                    <select name="car_fuel" id="car_fuel">
+                        <option value="gasoline">Бензин</option>
+                        <option value="gas">Газ</option>
+                        <option value="twice_fuel">Газ-бензин</option>
+                        <option value="diesel">Дизель</option>
+                        <option value="hybrid">Гібрид</option>
+                        <option value="electro">Електро</option>
+                        <option value="other_fuel">Інше</option>
+                    </select>
+
+                    <br>
+
+                    <label for="car_gearbox">Тип коробки передач:</label>
+                    <select name="car_gearbox" id="car_gearbox">
+                        <option value="manual">Ручна</option>
+                        <option value="automatic">Автоматична</option>
+                        <option value="tiptronic">Типтронік</option>
+                        <option value="robot">Робот</option>
+                        <option value="variator">Варіатор</option>
+                    </select>
+
+                    <br>
+
+                    <label for="car_color">Тип коробки передач:</label>
+                    <select name="car_color" id="car_color">
+                        <option value="white">Білий</option>
+                        <option value="red">Червоний</option>
+                        <option value="black">Чорний</option>
+                        <option value="silver">Срібний</option>
+                        <option value="yellow">Жовтий</option>
+                        <option value="green">Зелений</option>
+                        <option value="brown">Коричневий</option>
+                    </select>
+
+                    <br>
+
+                    <label for="car_comfort">Комфорт:</label>
+                    <div class="header__heading car_comfort">
+                        <input type="checkbox" name="hatch" id="hatch">
+                        <label for="hatch">Люк</label>
+                    </div>
+                    <div class="header__heading car_comfort">
+                        <input type="checkbox" name="leather_lard" id="leather_lard">
+                        <label for="leather_lard">Шкіряний салон</label>
+                    </div>
+                    <div class="header__heading car_comfort">
+                        <input type="checkbox" name="lamp" id="lamp">
+                        <label for="lamp">LED-лампи </label>
+                    </div>
+                    <div class="header__heading car_comfort">
+                        <input type="checkbox" name="seat_heating" id="seat_heating">
+                        <label for="seat_heating">Підігрів сидінь</label>
+                    </div>
+                    <div class="header__heading car_comfort">
+                        <input type="checkbox" name="lifters" id="lifters">
+                        <label for="lifters">Склопідйомники</label>
+                    </div>
+
+                    <br>
+
+                    <input type="submit" value="Пошук">
+                </form>
+            </div>
+            <div class="header__heading">
+
+            </div>
+
+        </header>
+
+        
+
+        <main class="main">
+
+        </main>
+
+        <footer class="footer">
+
+        </footer>
+    </div>
+</body>
+</html>
