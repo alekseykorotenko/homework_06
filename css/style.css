@@ -197,8 +197,6 @@ body {
 /* 10 */
 .car__search--spec {
     background-color: #219be7;
-    
-    /* color: #fff; */
 }
 
 /* 10 */
@@ -216,11 +214,13 @@ body {
     margin: 0px 15px 20px 100px
 }
 
+/* 10 */
 .header__img--spec {
     width: 25%;
     margin: 60px 15px 20px 50px
 }
 
+/* 10 */
 .main {
     display: flex;
     background-color: rgb(230, 230, 230);
@@ -230,29 +230,27 @@ body {
     padding-bottom: 15px;
 }
 
+/* 10 */
 .main--mod {
     margin-top: 65px;
 }
 
+/* 10 */
 .img__wrap {
     width: 25vw;
     border-radius: 20px;
     margin-top: 15px;
 }
 
+/* 10 */
 .car__heading {
     font-weight: 700;
     margin-top: 10px;
 }
 
+/* 10 */
 .search__label {
     color: #000000;
     text-align: center;
     font-weight: 600;
 }
-
-
-
-/* .main__wrapper--left {
-    padding: 1% 0 3% 1%;
-} */
