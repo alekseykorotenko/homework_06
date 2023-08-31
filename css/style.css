@@ -92,7 +92,9 @@ body {
 /* 10 */
 .car__comfort,
 /* 10 */
-.header__authorization {
+.header__authorization,
+/* 10 */
+.header__registration{
     margin-top: 10px ;
     margin-bottom: 10px;
     display: flex;
@@ -151,7 +153,9 @@ body {
 /* 10 */
 .car__gearbox,
 /* 10 */
-.authorization__input {
+.authorization__input,
+/* 10 */
+.registration__input {
     display: inline-block;
     min-width: 15ch;
     /* max-width: 30ch; */
@@ -199,7 +203,10 @@ body {
 
 /* 10 */
 .car__submit, 
-.auth {
+/* 10 */
+.auth,
+/* 10 */
+.registration {
     color: #fff;
 }
 

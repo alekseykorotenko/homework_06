@@ -29,43 +29,47 @@
             </div>
         </nav>
 
-        <header class="header">
-            
+        <header class="header header--spec">
+            <div class="header__heading--spec">
+                <form action="https://fom.in.ua/echo" method="POST">
+                    <h1 class="header__heading registration">Реєстрація</h1>
+                    <div class="header__registration">
+                        <label for="login">Логін: </label>
+                        <input class="registration__input" type="text" id="login" placeholder="Вкажіть логін" required>
+                    </div>
+                    <!-- <br> -->
+                    
+                    <div class="header__registration">
+                        <label for="phonr">Номер телефону: </label>
+                        <input class="registration__input" type="tel" id="phone" placeholder="Вкажіть номер телефону" required>
+                    </div>
+
+                    <div class="header__registration">
+                        <label for="email">E-mail:</label>
+                        <input class="registration__input" type="email" id="email" placeholder="Вкажіть електронну пошту" required>
+                    </div>
+
+                    <div class="header__registration">
+                        <label for="password">Пароль: </label>
+                        <input class="registration__input" type="password" id="password" placeholder="Вкажіть пароль" required>
+                    </div>
+
+                    <div class="header__registration">
+                        <label for="password-repeat">Повторіть пароль: </label>
+                        <input class="registration__input" type="password" id="password-repeat" placeholder="Вкажіть пароль повторно" required>
+                    </div>
+                    <div class="car__search car__search--spec">
+                        <button type="submit">
+                            <span class="car__submit">Зареєструватись</span>
+                        </button>
+                    </div>
+                </form>
+            </div>  
         </header>
 
-        <main class="main">
-            <h1 class="main__heading">Реєстрація</h1>
-            <div class="main__heading--spec">
-                <form action="https://fom.in.ua/echo" method="POST">
-                    <label for="login">Логін: </label>
-                    <input type="text" id="login" placeholder="Вкажіть логін" required>
-    
-                    <br>
-                    
-                    <label for="phonr">Номер телефону: </label>
-                    <input type="tel" id="phone" placeholder="Вкажіть номер телефону" required>
-    
-                    <br>
-    
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" placeholder="Вкажіть електронну пошту" required>
-    
-                    <br>
-    
-                    <label for="password">Пароль: </label>
-                    <input type="password" id="password" placeholder="Вкажіть пароль" required>
-    
-                    <br>
-    
-                    <label for="password-repeat">Повторіть пароль: </label>
-                    <input type="password" id="password-repeat" placeholder="Вкажіть пароль повторно" required>
-    
-                    <br>
-    
-                    <input type="submit" name="Submit">
-                </form>
-            </div>
-        </main>
+        <!-- <main class="main">
+            
+        </main> -->
     </div>
 </body>
 </html>
