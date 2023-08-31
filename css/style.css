@@ -76,7 +76,11 @@ body {
 }
 
 /* 10 */
-.car_body {
+.car_body,
+/* 10 */
+.car__condition,
+/* 10 */
+.car__comfort{
     margin-top: 10px ;
     margin-bottom: 10px;
     display: flex;
@@ -94,6 +98,7 @@ body {
     cursor: pointer;
     display: block;
     font-size: 1rem;
+    margin-left: 10px;
 }
 
 /* 11 */
@@ -128,7 +133,11 @@ body {
 /* 10 */
 .car__select,
 /* 10 */
-.car__input {
+.car__fuel,
+/* 10 */
+.car__input,
+/* 10 */
+.car__gearbox {
     display: inline-block;
     min-width: 15ch;
     /* max-width: 30ch; */
@@ -185,6 +194,11 @@ body {
     margin: 20px 15px 20px 100px
 }
 
+.header__img--spec {
+    width: 20%;
+    margin: 100px 15px 20px 100px
+}
+
 .main {
     display: flex;
     background-color: rgb(230, 230, 230);
@@ -192,6 +206,10 @@ body {
     text-align: center;
     border-radius: 15px;
     padding-bottom: 15px;
+}
+
+.main--mod {
+    margin-top: 65px;
 }
 
 .img__wrap {
@@ -203,6 +221,12 @@ body {
 .car__heading {
     font-weight: 700;
     margin-top: 10px;
+}
+
+.search__label {
+    color: #000000;
+    text-align: center;
+    font-weight: 600;
 }
 
 
