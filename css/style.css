@@ -263,3 +263,7 @@ body {
     font-weight: 600;
     text-shadow: 1px 1px 2px #000000;
 }
+
+.main__uppercase {
+    text-transform: uppercase;
+}
