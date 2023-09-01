@@ -258,7 +258,8 @@ body {
 
 /* 10 */
 .search__label {
-    color: #000000;
+    color: #fff;
     text-align: center;
     font-weight: 600;
+    text-shadow: 1px 1px 2px #000000;
 }
