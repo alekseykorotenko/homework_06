@@ -29,20 +29,20 @@
         </nav>
 
         <header class="header header--spec">
-            <div class="header__heading--spec">
+            <div class="header__heading--spec authorization">
                 <form action="https://fom.in.ua/echo" method="POST">
                     <h1 class="header__heading auth">Авторизація</h1>
                     <div class="header__authorization">
                         <label for="login">Логін: </label>
-                        <input class="authorization__input" type="text" id="login" placeholder="Вкажіть логін" required>
+                        <input class="authorization__input" type="text" id="login" name="login" placeholder="Вкажіть логін" required>
                     </div>
                     <div class="header__authorization">
                         <label for="password">Пароль: </label>
-                        <input class="authorization__input" type="password" id="password" placeholder="Вкажіть пароль" required>
+                        <input class="authorization__input" type="password" id="password" name="password" placeholder="Вкажіть пароль" required>
                     </div>
                     <div class="car__search car__search--spec">
                         <button type="submit">
-                            <span class="car__submit">Увійти</span>
+                            <span class="car__submit">Авторизація</span>
                         </button>
                     </div>
                 </form>
@@ -52,6 +52,36 @@
         <!-- <main class="main">
             
         </main> -->
+
+        <footer class="footer">
+            <div class="footer__section logo">
+                <img src="../imgs/logo.png" alt="logo">
+                <h3 class="footer__name">BuyMyCar</h3>
+            </div>
+
+            <div class="footer__section callback">
+                <h3 class="footer__name">Зворотній звʼязок</h3>
+                <form action="https://fom.in.ua/echo" method="POST">
+                    <label for="callback_about" class="callback_label">На що бажаєте залишити скаргу?</label>
+                    <br>
+                    <select name="about" id="callback_about" multiple>
+                        <option value="service">Сервіс</option>
+                        <option value="design">Дизайн сайту</option>
+                        <option value="seller">Продавець</option>
+                    </select>
+
+                    <label for="message">Залишити відгук:</label> <br>
+                    <textarea name="message" id="message" cols="50" rows="5"></textarea>
+
+                    <div class="car__search car__search--spec">
+                        <button type="submit">
+                            <span class="car__submit">Відправити скаргу</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </footer>
     </div>
 </body>
 </html>

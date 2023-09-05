@@ -157,26 +157,33 @@
                     <div class="search__label">
                         <label for="car_body">Тип кузову:</label>
                     </div>
-                    <div class="header__heading car_body">
+                    <div class="header__heading radio_car_body">
                         <!-- <label for="car_body">Тип кузову: </label> -->
-                        <label class="checkbox">
-                            <input type="checkbox" name="sedan" id="sedan">
+                        <label class="radio" for="sedan">
+                            <input type="radio" name="sedan" id="sedan">
+                            <!-- <input type="checkbox" name="sedan" id="sedan"> -->
                             <span>Седан</span> 
                         </label>
-                        <label class="checkbox">
-                            <input type="checkbox" name="crossover" id="crossover">
+                        <label class="radio" for="crossover">
+                            <input type="radio" name="crossover" id="crossover">
+
+                            <!-- <input type="checkbox" name="crossover" id="crossover"> -->
                             <span>Кросовер</span>
                         </label>
-                        <label class="checkbox">
-                            <input type="checkbox" name="wagon" id="wagon">
+                        <label class="radio" for="wagon">
+                            <input type="radio" name="wagon" id="wagon">
+
+                            <!-- <input type="checkbox" name="wagon" id="wagon"> -->
                             <span>Універсал</span>
                         </label>
-                        <label class="checkbox">
-                            <input type="checkbox" name="coupe" id="coupe">
+                        <label class="radio" for="coupe">
+                            <input type="radio" name="coupe" id="coupe">
+                            <!-- <input type="checkbox" name="coupe" id="coupe"> -->
                             <span>Купе</span>
                         </label>
-                        <label class="checkbox">
-                            <input type="checkbox" name="hatchback" id="hatchback">
+                        <label class="radio" for="hatchback">
+                            <input type="radio" name="hatchback" id="hatchback">
+                            <!-- <input type="checkbox" name="hatchback" id="hatchback"> -->
                             <span>Хетчбек</span>
                         </label>
                     </div>
@@ -185,23 +192,23 @@
                         <label for="car__condition">Стан:</label>
                     </div>
                     <div class="header__heading car__condition">
-                        <label class="checkbox">
+                        <label class="checkbox" for="new">
                             <input type="checkbox" name="new" id="new">
                             <span>Нова</span> 
                         </label>
-                        <label class="checkbox">
+                        <label class="checkbox" for="crashed">
                             <input type="checkbox" name="crashed" id="crashed">
                             <span>Бита</span>
                         </label>
-                        <label class="checkbox">
+                        <label class="checkbox" for="credit">
                             <input type="checkbox" name="credit" id="credit">
                             <span>У кредиті</span>
                         </label>
-                        <label class="checkbox">
+                        <label class="checkbox" for="not_cleared">
                             <input type="checkbox" name="not_cleared" id="not_cleared">
                             <span>Нерозмитнена</span>
                         </label>
-                        <label class="checkbox">
+                        <label class="checkbox" for="first_registration">
                             <input type="checkbox" name="first_registration" id="first_registration">
                             <span>Перша реєстрація</span>
                         </label>
@@ -211,23 +218,23 @@
                         <label for="car__comfort">Комфорт:</label>
                     </div>
                     <div class="header__heading car__comfort">
-                        <label class="checkbox">
+                        <label class="checkbox" for="hatch">
                             <input type="checkbox" name="hatch" id="hatch">
                             <span>Люк</span> 
                         </label>
-                        <label class="checkbox">
+                        <label class="checkbox" for="leather_lard">
                             <input type="checkbox" name="leather_lard" id="leather_lard">
                             <span>Шкіряний салон</span>
                         </label>
-                        <label class="checkbox">
+                        <label class="checkbox" for="lamp">
                             <input type="checkbox" name="lamp" id="lamp">
                             <span>LED-лампи</span>
                         </label>
-                        <label class="checkbox">
+                        <label class="checkbox" for="seat_heating">
                             <input type="checkbox" name="seat_heating" id="seat_heating">
                             <span>Підігрів сидінь</span>
                         </label>
-                        <label class="checkbox">
+                        <label class="checkbox" for="lifters">
                             <input type="checkbox" name="lifters" id="lifters">
                             <span>Склопідйомники</span>
                         </label>
@@ -303,13 +310,38 @@
                         <img src="../imgs/vw_passat.webp" alt="vw_passat">
                     </div>
                     <h2 class="car__heading">VW Passat B7 (NMS) з Америки</h2>
-                    <p class="car__info">10т.$, 1.8 турбо двигун, валить</p></div>
+                    <p class="car__info">10т.$, 1.8 турбо двигун, валить</p>
                 </div>
             </div>
         </main>
 
         <footer class="footer">
+            <div class="footer__section logo">
+                <img src="../imgs/logo.png" alt="logo">
+                <h3 class="footer__name">BuyMyCar</h3>
+            </div>
 
+            <div class="footer__section callback">
+                <h3 class="footer__name">Зворотній звʼязок</h3>
+                <form action="https://fom.in.ua/echo" method="POST">
+                    <label for="callback_about" class="callback_label">На що бажаєте залишити скаргу?</label>
+                    <br>
+                    <select name="about" id="callback_about" multiple>
+                        <option value="service">Сервіс</option>
+                        <option value="design">Дизайн сайту</option>
+                        <option value="seller">Продавець</option>
+                    </select>
+
+                    <label for="message">Залишити відгук:</label> <br>
+                    <textarea name="message" id="message" cols="50" rows="5"></textarea>
+
+                    <div class="car__search car__search--spec">
+                        <button type="submit">
+                            <span class="car__submit">Відправити скаргу</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
         </footer>
     </div>
 </body>
