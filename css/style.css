@@ -147,7 +147,7 @@ body {
 
 /* 13 */
 .radio input+span::before {
-    border: 1px solid black;
+    border: 1px dashed black;
 }
 
 /* 23 */
@@ -266,6 +266,11 @@ body {
 .main__wrapper {
     display: inline-block;
     width: 50%;
+}
+
+.main__wrapper a {
+    text-decoration: none;
+    color: #000000;
 }
 
 /* 10 */
